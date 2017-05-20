@@ -1,0 +1,19 @@
+<h3>Its playlist component</h3>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="#v of videos" (click)="clickCalled(v)">
+            <td>{{v.id}}</td>
+            <td>{{v.title}}</td>
+            <td> {{v.desc}} </td>
+        </tr>
+    </tbody>
+
+</table>
