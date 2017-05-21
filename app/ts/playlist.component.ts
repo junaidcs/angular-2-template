@@ -9,6 +9,10 @@ import { Video } from './video';
 
 export class PlaylistComponent {
 
+	vids: number[] = [11,22,33,44,556];
+
+	showArr: boolean = true;
+
     clickCalled(vid:Video) {
         console.log(vid);
     }
